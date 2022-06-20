@@ -1,0 +1,47 @@
+{
+	"root": true,
+	"extends": [
+		"eslint:recommended",
+		"plugin:unicorn/recommended"
+	],
+	"parserOptions": {
+		"ecmaVersion": 2019,
+		"sourceType": "module"
+	},
+	"env": {
+		"es6": true,
+		"node": true
+	},
+	"ignorePatterns": [
+		"./.idea/**",
+		"./.nyc_output/**",
+		"./logs/**",
+		"./tap-snapshots/**"
+	],
+	"plugins": [
+		"unicorn"
+	],
+	"rules": {
+		"comma-dangle": [
+			"error",
+			"always-multiline"
+		],
+		"object-curly-spacing": [
+			"error",
+			"never"
+		],
+		"semi": [
+			"error",
+			"never"
+		],
+		"unicorn/prevent-abbreviations": [
+			"error",
+			{
+				"allowList": {
+					"args": true,
+					"func": true
+				}
+			}
+		]
+	}
+}
