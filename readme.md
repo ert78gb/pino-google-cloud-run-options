@@ -22,3 +22,15 @@ The custom log levels map to the `DEFAULT` Google Log level if you don't write c
 
 It does not log the `hostname` and `pid` information, because Google Cloud Run logs the instance id and other context
 information.
+
+```javascript
+import pinoOptions from '@ert78gb/pino-google-cloud-run-options'
+import pino from 'pino'
+
+const logger = pino(pinoOptions)
+// or extend
+const logger = pino({
+  ...pinoOptions,
+  level: process.env.LOG_LEVEL
+})
+```
