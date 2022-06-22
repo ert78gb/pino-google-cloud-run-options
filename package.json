@@ -9,7 +9,7 @@
   "type": "module",
   "scripts": {
     "lint": "eslint .",
-    "test": "tap -T"
+    "test": "tap"
   },
   "keywords": [
     "pino",
