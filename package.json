@@ -7,9 +7,10 @@
     ".": "./lib/index.js"
   },
   "type": "module",
+  "types": "./lib/index.d.ts",
   "scripts": {
     "lint": "eslint .",
-    "test": "tap"
+    "test": "tap && tsd"
   },
   "keywords": [
     "pino",
@@ -31,6 +32,10 @@
     "flush-write-stream": "^2.0.0",
     "pino": "^8.0.0",
     "split2": "^4.1.0",
-    "tap": "^16.3.0"
+    "tap": "^16.3.0",
+    "tsd": "^0.21.0"
+  },
+  "tsd": {
+    "directory": "test"
   }
 }
