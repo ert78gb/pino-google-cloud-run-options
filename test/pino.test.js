@@ -1,6 +1,6 @@
 import {test} from 'tap'
 import pino from 'pino'
-import options from '../lib/index.js'
+import options, {levelFormatter} from '../lib/index.js'
 import {once, sink} from './helper.js'
 
 test('should initiate a new logger with the options', async ({ok}) => {
@@ -94,4 +94,10 @@ test('should not have time property', async ({notOk}) => {
 	const result = await once(stream, 'data')
 
 	notOk(result.time)
+})
+
+test('levelFormatter should set DEFAULT log level if log level not predefined', async ({strictSame}) => {
+	const result = levelFormatter({}, 0)
+
+	strictSame(result, {severity: 'DEFAULT'})
 })
