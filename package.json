@@ -9,7 +9,7 @@
   "type": "module",
   "types": "./lib/index.d.ts",
   "scripts": {
-    "lint": "eslint .",
+    "lint": "eslint",
     "test": "tap && tsd"
   },
   "keywords": [
