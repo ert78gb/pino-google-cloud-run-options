@@ -30,7 +30,7 @@
     "eslint": "^9.0.0",
     "eslint-plugin-unicorn": "^52.0.0",
     "flush-write-stream": "^2.0.0",
-    "pino": "^8.0.0",
+    "pino": "^9.0.0",
     "split2": "^4.1.0",
     "tap": "^18.3.0",
     "tsd": "^0.31.0"
