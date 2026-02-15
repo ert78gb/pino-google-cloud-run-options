@@ -27,9 +27,11 @@
     "lib/"
   ],
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "eslint": "^10.0.0",
     "eslint-plugin-unicorn": "^63.0.0",
     "flush-write-stream": "^2.0.0",
+    "globals": "^17.3.0",
     "pino": "^10.0.0",
     "split2": "^4.1.0",
     "tap": "^21.0.0",

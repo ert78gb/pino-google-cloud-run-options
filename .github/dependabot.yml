@@ -10,6 +10,12 @@ updates:
     commit-message:
       prefix: "fix"
       prefix-development: "chore"
+    groups:
+      eslint:
+        dependency-type: "development"
+        patterns:
+          - "@eslint/js"
+          - "eslint"
 
   - package-ecosystem: "github-actions"
     directory: "/"

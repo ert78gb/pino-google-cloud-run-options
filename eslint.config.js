@@ -1,8 +1,9 @@
 import eslint from "@eslint/js";
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
 import globals from "globals";
+import { defineConfig } from "eslint/config";
 
-export default [
+export default defineConfig([
 	{
 		files: ["**/*.js"],
 		ignores: [
@@ -31,4 +32,4 @@ export default [
 			]
 		}
 	}
-]
+])
