@@ -27,7 +27,7 @@
     "lib/"
   ],
   "devDependencies": {
-    "eslint": "^9.0.0",
+    "eslint": "^10.0.0",
     "eslint-plugin-unicorn": "^63.0.0",
     "flush-write-stream": "^2.0.0",
     "pino": "^10.0.0",
