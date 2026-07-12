@@ -21,7 +21,7 @@ export default defineConfig([
 	eslintPluginUnicorn.configs['flat/recommended'],
 	{
 		rules: {
-			"unicorn/prevent-abbreviations": [
+			"unicorn/name-replacements": [
 				"error",
 				{
 					"allowList": {
