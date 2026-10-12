@@ -3,6 +3,7 @@ import eslintPluginUnicorn from 'eslint-plugin-unicorn';
 import globals from "globals";
 import { defineConfig } from "eslint/config";
 
+// eslint-disable-next-line unicorn/no-top-level-side-effects
 export default defineConfig([
 	{
 		files: ["**/*.js"],
@@ -18,7 +19,7 @@ export default defineConfig([
 		}
 	},
 	eslint.configs.recommended,
-	eslintPluginUnicorn.configs['flat/recommended'],
+	eslintPluginUnicorn.configs.recommended,
 	{
 		rules: {
 			"unicorn/name-replacements": [
@@ -29,7 +30,8 @@ export default defineConfig([
 						"func": true
 					}
 				}
-			]
+			],
+			"unicorn/no-asterisk-prefix-in-documentation-comments": 'off',
 		}
 	}
 ])
